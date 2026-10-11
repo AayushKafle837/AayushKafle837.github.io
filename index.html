@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aayush Kafle · Web developer</title>
+    <meta name="description" content="Aayush Kafle, IT student at QUT in Brisbane. PHP, JavaScript and Python projects, and the people I help learn to code.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%232347c9'/><text x='16' y='22' font-family='Arial' font-weight='700' font-size='15' fill='white' text-anchor='middle'>AK</text></svg>">
+</head>
+<body>
+
+<a class="skip" href="#work">Skip to projects</a>
+
+<header class="top">
+    <a href="#" class="mark">Aayush Kafle</a>
+    <nav aria-label="Main">
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <h1>I build things for the web, and I help people get unstuck when theirs won't run.</h1>
+        <p class="lede">
+            I'm Aayush, an IT student at QUT in Brisbane (AI and Software Development, graduating 2027).
+            I write PHP, JavaScript and Python, and most weeks I'm sitting next to a student working out
+            why their code does what it does.
+        </p>
+        <ul class="links">
+            <li><a class="btn" href="https://github.com/AayushKafle837">GitHub</a></li>
+            <li><a class="btn ghost" href="https://www.linkedin.com/in/aayush-kafle-515a71367">LinkedIn</a></li>
+            <li><a class="btn ghost" href="mailto:kafleaayush46@gmail.com">kafleaayush46@gmail.com</a></li>
+        </ul>
+    </section>
+
+    <section id="work" class="featured" aria-labelledby="feat-title">
+        <div class="feat-text">
+            <p class="kicker">Latest project</p>
+            <h2 id="feat-title">Drop-in Queue</h2>
+            <p>
+                A help queue for study drop-in sessions. Students join from their laptop and see their place
+                and a wait estimate. Facilitators claim the next student from a live board.
+            </p>
+            <p>
+                I built it because of a real problem at STIMulate, where I facilitate: on busy nights it's hard
+                to tell who has waited longest. I wrote it in plain PHP with my own router, controllers and
+                views, so I'd understand what frameworks like Symfony are doing for me.
+            </p>
+            <ul class="facts">
+                <li><strong>MVC without a framework:</strong> front controller, router with URL parameters, thin controllers, a service layer and a repository for SQL</li>
+                <li><strong>LAMP:</strong> Apache and MySQL in Docker, plus SQLite for quick local runs</li>
+                <li><strong>Careful with details:</strong> prepared statements, escaped output, CSRF tokens, and two facilitators can't claim the same student</li>
+                <li><strong>Tested:</strong> 15 PHPUnit tests, including the wait-time maths with a fake clock</li>
+            </ul>
+            <p class="stack">PHP 8 · MySQL · Apache · Docker · PHPUnit · Git</p>
+            <p class="actions">
+                <a class="btn" href="https://github.com/AayushKafle837/dropin-queue">View the code</a>
+                <a class="btn ghost" href="https://github.com/AayushKafle837/dropin-queue#how-its-built">How it's built</a>
+            </p>
+        </div>
+        <figure class="feat-shots">
+            <img src="assets/board.webp" width="1400" height="1145" alt="Facilitator board showing one student being helped and three waiting, each with a Claim button">
+            <img class="phone" src="assets/mobile.webp" width="560" height="1091" alt="The join form on a phone: name, unit code and what you need help with">
+        </figure>
+    </section>
+
+    <section class="more" aria-labelledby="more-title">
+        <h2 id="more-title">Other work</h2>
+        <ol class="projects">
+            <li>
+                <div class="p-head">
+                    <h3>ThinkTrace</h3>
+                    <span class="tag">Team of 4</span>
+                </div>
+                <p>An AI learning assistant: chat, document upload, speech input and spoken replies. Over 200 commits across the team, with features built on branches and merged through pull requests.</p>
+                <p class="stack">Next.js · React · Python · TensorFlow · Azure</p>
+                <p class="note">Private repo. Happy to walk through it.</p>
+            </li>
+            <li>
+                <div class="p-head">
+                    <h3>Strobe API</h3>
+                    <span class="tag">University</span>
+                </div>
+                <p>Moved a social media backend from a single Express server with a JSON file database to serverless AWS: Lambda functions behind API Gateway, DynamoDB, Cognito sign-in and S3 for media.</p>
+                <p class="stack">Node.js · AWS Lambda · DynamoDB · Cognito · S3 · API Gateway</p>
+            </li>
+            <li>
+                <div class="p-head">
+                    <h3><a href="https://github.com/Dhairyaxshah/Appfluence">Appfluence</a></h3>
+                    <span class="tag">Team</span>
+                </div>
+                <p>Cleaned App Store and Google Play data, predicted which apps become popular, and grouped the market into four segments that held up across both stores.</p>
+                <p class="stack">Python · pandas · scikit-learn · Random Forest · K-Means · PCA</p>
+            </li>
+            <li>
+                <div class="p-head">
+                    <h3>Raspberry Pi web server</h3>
+                    <span class="tag">Personal</span>
+                </div>
+                <p>Set up and hosted my own Apache web server on a Raspberry Pi running Linux, with a Flask app that sends SMS notifications.</p>
+                <p class="stack">Linux · Apache · Python · Flask</p>
+            </li>
+            <li>
+                <div class="p-head">
+                    <h3><a href="https://github.com/Saijal1313/dogs-vs-cats-ml-evaluation">Dogs vs Cats</a></h3>
+                    <span class="tag">Team</span>
+                </div>
+                <p>An image classifier we built and presented at a Google Developer Groups session. The point was honest evaluation: keep the test set untouched until the very end.</p>
+                <p class="stack">Python · TensorFlow · Google Colab</p>
+            </li>
+        </ol>
+    </section>
+
+    <section class="ai" aria-labelledby="ai-title">
+        <h2 id="ai-title">How I use AI tools</h2>
+        <p>
+            I use coding assistants like Claude every day. They're fast at the first draft and at explaining
+            unfamiliar code. I treat what they write the way I'd treat a teammate's pull request: I read it,
+            run it, test it, and only keep what I can explain. On Drop-in Queue that review caught two real
+            bugs before they shipped.
+        </p>
+    </section>
+
+    <section id="experience" aria-labelledby="exp-title">
+        <h2 id="exp-title">Experience</h2>
+        <ol class="roles">
+            <li><span class="when">Oct 2026 – now</span><span class="what"><strong>Assistant Analyst, Analytics and AI Capability</strong>QUT Digital Business Solutions</span></li>
+            <li><span class="when">Jul 2026 – now</span><span class="what"><strong>Student Success Partner</strong>QUT</span></li>
+            <li><span class="when">Jun 2026 – now</span><span class="what"><strong>HiQ Concierge</strong>QUT</span></li>
+            <li><span class="when">Feb 2026 – now</span><span class="what"><strong>Peer Learning Facilitator</strong>STIMulate, QUT</span></li>
+            <li><span class="when">Nov 2025 – now</span><span class="what"><strong>Instructor</strong>Code Camp</span></li>
+            <li><span class="when">Nov 2025 – now</span><span class="what"><strong>Projects Officer</strong>QUT AI and Machine Learning Society</span></li>
+        </ol>
+        <p class="edu"><strong>Bachelor of Information Technology</strong>, QUT. Artificial Intelligence and Software Development. Faculty of Science Dean's Scholar. Expected 2027.</p>
+    </section>
+
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Say hello</h2>
+        <p>I'm based in Brisbane and looking for part-time web development work.</p>
+        <p><a class="big-link" href="mailto:kafleaayush46@gmail.com">kafleaayush46@gmail.com</a></p>
+    </section>
+</main>
+
+<footer>
+    <p>Hand-written HTML and CSS, hosted on GitHub Pages.</p>
+</footer>
+
+</body>
+</html>
